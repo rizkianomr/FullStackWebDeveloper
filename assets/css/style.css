@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+table{
+    margin-top: 10px;
+}
+
+table td, img{
+    text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+table ul, li{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	list-style: none;
+	text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+	
+	/* background-color: yellow; */
+	/* justify-content: space-between; */
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+
+#header{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    margin-bottom:10px;
+	/* background-color: green; */
+	
+}
+
+#header li{
+	float: left;
+    text-align: center;
+    list-style: none;
+    margin-right: 20px;
+	font-size: 18px;
+	/* background-color: orange; */
+}
+
+#header img{
+    height: 50px;
+    width: 50px;
+	/* background-color: blue; */
+}
+
+#header div{
+	font-size: 18px;
+}
+
+#main{
+	width: 80%;
+    margin:auto;
+	font-size: 18px;
+}
+
+#main h2{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#main table{
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+#form, #result{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+	margin-top: 40px;
+}

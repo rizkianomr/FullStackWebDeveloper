@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="header">
+		<div class="container">
+			<div class="row">
+				<img src="assets/images/logo.png" />
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Program</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Job Information</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+				<div>
+					<a href="index.html">Kembali</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="form">
+        <form action="#">
+            <input type="number" name="angka1" id="angka1" placeholder="Masukkan Angka 1">
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <input type="number" name="angka2" id="angka2" placeholder="Masukkan Angka 2">
+            <input type="button" value="Hitung" onclick="hitungSubmit()">
+        </form>
+    </div>
+
+    <div id="result">
+        Hasil dari &nbsp;<span id="ang1">Angka 1</span>&nbsp;<span id="opr">Operator</span>&nbsp;<span
+            id="ang2">Angka 2</span>&nbsp;=&nbsp;<span id="hasil">Hasil</span>
+    </div>
+
+    <script>
+        function hitungSubmit() {
+            let angka1 = parseInt(document.getElementById("angka1").value)
+            let operator = document.getElementById("operator").value
+            let angka2 = parseInt(document.getElementById("angka2").value)
+            let hasil = 0
+
+            if (operator == "+") {
+                hasil = angka1 + angka2
+            } else if (operator == "-") {
+                hasil = angka1 - angka2
+            } else if (operator == "/") {
+                hasil = angka1 / angka2
+            } else if (operator == "*") {
+                hasil = angka1 * angka2
+            }
+
+            document.getElementById("ang1").innerHTML = angka1
+            document.getElementById("opr").innerHTML = operator
+            document.getElementById("ang2").innerHTML = angka2
+            document.getElementById("hasil").innerHTML = hasil
+        }
+    </script>
+</body>
+
+</html>
